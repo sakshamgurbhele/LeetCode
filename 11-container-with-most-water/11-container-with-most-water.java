@@ -4,7 +4,7 @@ class Solution {
         int first = 0;
         int last = height.length-1;
         int temp_area = 0;
-        for(int i = 0; i<= height.length-1; i++){
+        while(first < last){
             if (height[first] < height[last]) {
                 temp_area = height[first] * (last - first);
                 first++;
